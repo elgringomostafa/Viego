@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.container img{
+    width: 15%;
+}
+
+
+
+nav{
+    height: 10%;
+}
+.home {
+ background-image: url(Pics/lunar.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100vh;
+position: relative;
+z-index: 0;
+
+}
+
+.hii{
+text-decoration: underline !important;
+font-weight: bold;
+color: rgb(34, 212, 153) !important;
+}
+
+.social{
+   font-size: 30px;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0 ;
+    left: 0 ;
+    background-color:  rgba(0, 0, 0, 0.3) ;
+    z-index: 0;
+}
+
+.home-content{
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+
+
+.home-content a{
+    padding: 5px;
+}
+
+.home-content h2{
+    font-size: 60px;
+}
+
+
+
+.hi{
+    color: white;
+    font-size: 50px;
+  
+}
+
+.home p {
+    color: white;
+    font-size: 70px;
+}
+
+.home-content p::after
+{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0%{content: "|";}
+    2%{content: "V|";}
+    4%{content: "Vi|";}
+    6%{content: "Vie|";}
+    8%{content: "Vieg|";}
+    10%{content: "Viego|";}
+    16%{content: "Viego|";}
+    18%{content: "Vieg|";}
+    20%{content: "Vie|";}
+    22%{content: "Vi|";}
+    24%{content: "V|";}
+    30%{content: "|";}
+    32%{content: "F|";}
+    34%{content: "Fi|";}
+    36%{content: "Fig|";}
+    38%{content: "Figh|";}
+    40%{content: "Fight|";}
+    42%{content: "Fighte|";}
+    44%{content: "Fighter|";}
+    46%{content: "Fighter|";}
+    48%{content: "Fighte|";}
+    50%{content: "Fight|";}
+    52%{content: "Figh|";}
+    54%{content: "Fig|";}
+    56%{content: "Fi|";}
+    58%{content: "F|";}
+    60%{content: "|";}
+    62%{content: "R|";}
+    64%{content: "Ru|";}
+    66%{content: "Rui|";}
+    68%{content: "Ruin|";}
+    70%{content: "Ruine|";}
+    72%{content: "Ruined|";}
+    74%{content: "Ruined|";}
+    76%{content: "Ruine|";}
+    78%{content: "Ruin|";}
+    80%{content: "Rui|";}
+    82%{content: "Ru|";}
+    84%{content: "R|";}
+    86%{content: "|";}
+    88%{content: "K|";}
+    90%{content: "Ki|";}
+    92%{content: "Kin|";}
+    94%{content: "King|";}
+    96%{content: "King|";}
+    97%{content: "Kin|";}
+    98%{content: "Ki|";}
+    99%{content: "K|";}
+100%{content: "|";}
+}
+
+/* Section 1 */
+
+.skill{
+    border-radius: 5px;
+    animation: skill 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes skill{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 95% ;
+    }
+}
+
+.last{
+    border-radius: 5px;
+    animation: last 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes last{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80% ;
+    }
+}
+
+.then{
+    border-radius: 5px;
+    animation: then 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes then{
+    0%{
+        width: 0%;
+    }   
+
+    100%{
+        width: 90% ;
+    }
+}
+
+.bg-success{
+    background-color: rgb(24, 151, 124) !important;
+}
+
+/* Section 2 */
+.bg-secondary{
+    background-image: linear-gradient(rgb(102, 179, 141), rgb(164, 216, 216)) !important   ;
+
+    
+}
+.hover img{
+    transition: ease-in-out 0.5s;
+}
+.col-sm figure{
+    overflow: hidden;
+}
+.hover img:hover{
+    transform: scale(1.5);
+    
+}
+
+.size2{
+    font-size: 50px ;
+}
+.size3{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+/* .shadow{
+    box-shadow: 2px 5px 10px 3px black !important;
+} */
+
+/* section 3 */
+.figure{
+    position: relative;
+}
+
+.figure .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255,0.5);
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    
+}
+
+.figure:hover .layer{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.figure .layer .down{
+    position: relative;
+    bottom: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.figure:hover .down{
+    bottom: 0;
+    color: black;
+    font-size: 20px;
+}
+.figure .layer a{
+    position: relative;
+    top: 10px;
+    transition: 0.5s;
+}
+.layer a i {
+    line-height: 40px;
+    font-size: 25px;
+    color: #1b8f72;
+
+}
+
+.figure:hover a{
+    top: 0;
+
+
+}
+
+.layer .info{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.layer a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.words .links a{
+text-decoration: none;
+font-size: 30px;
+color: black;
+}
+
+
+
+/* numbers */
+.space{
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.counter-box {
+	display: block;
+	background: #f6f6f6;
+	padding: 40px 20px 37px;
+	text-align: center
+}
+
+.counter-box p {
+	margin: 5px 0 0;
+	padding: 0;
+	color: #909090;
+	font-size: 18px;
+	font-weight: 500
+}
+
+.counter-box i {
+	font-size: 60px;
+	margin: 0 0 15px;
+	color: #d2d2d2
+}
+
+.counter { 
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+	color: #666;
+	line-height: 28px
+}
+
+.counter-box.colored {
+      background: #1b8f72;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+	color: #fff
+}
+
+.counter::after
+{
+    content: "";
+    animation-name: count;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes count{
+    0%{content: "47";}
+    2%{content: "48";}
+    4%{content: "49";}
+    6%{content: "50";}
+    8%{content: "51";}
+    10%{content: "52";}
+    16%{content: "53";}
+    18%{content: "54";}
+    20%{content: "55";}
+    22%{content: "56";}
+    24%{content: "60";}
+    30%{content: "62";}
+    32%{content: "64";}
+    34%{content: "66";}
+    36%{content: "68";}
+    38%{content: "70";}
+    40%{content: "72";}
+    42%{content: "74";}
+    44%{content: "76";}
+    46%{content: "80";}
+    48%{content: "88";}
+    50%{content: "86";}
+    52%{content: "84";}
+    54%{content: "90";}
+    56%{content: "92";}
+    58%{content: "93";}
+    60%{content: "94";}
+    62%{content: "95";}
+    64%{content: "96";}
+    66%{content: "96";}
+    68%{content: "97";}
+    70%{content: "98";}
+    72%{content: "99";}
+    74%{content: "100";}
+    76%{content: "110";}
+    78%{content: "115";}
+    80%{content: "120";}
+    82%{content: "130";}
+    84%{content: "135";}
+    86%{content: "135";}
+    88%{content: "123";}
+    90%{content: "154";}
+    92%{content: "164";}
+    94%{content: "122";}
+    96%{content: "326";}
+    97%{content: "236";}
+    98%{content: "254";}
+    99%{content: "666";}
+100%{content: "6";}
+}
+
+/* sec6 */
+
+.card22{
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
